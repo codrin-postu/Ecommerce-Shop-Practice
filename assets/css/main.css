@@ -1,0 +1,76 @@
+/* CSS File for example Ecommerce website. Made by Codrin (W) */
+
+div {
+    display: block;
+}
+
+.top-bar {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.login-bar {
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    color: #fff!important;
+	background-color: #000!important;
+    padding: 5px 0;
+}
+
+.login-bar ul {
+    margin-right: 20px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.nav-bar {
+    width: 100%;
+    padding: 16px;
+    overflow: hidden;
+    color: #000!important;
+	background-color: #fff!important;
+    height: 60px;
+}
+
+.login-bar .login-bar-item {
+    padding: 4px 12px;
+	float: right;
+	width: auto;
+	border: none;
+	display: block
+}
+
+.login-bar .login-bar-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.nav-bar .logo {
+    padding: 0px 6px;
+	float: left;
+	width: auto;
+	border: none;
+    display: inline;
+    font-size: 28px;
+    margin-right: 15%;
+}
+
+.nav-bar ul {
+    margin-top: 24px;
+    width: 40%;
+    float: right;
+}
+
+.nav-bar .nav-bar-item {
+    padding-left: 5%;
+	float: left;
+    display: inline;
+}

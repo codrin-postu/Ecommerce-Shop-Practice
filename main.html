@@ -8,28 +8,31 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-  <!--<link rel="stylesheet" href="styles.css">-->
+  <link rel="stylesheet" href="./assets/css/main.css" />
 
   <body>
     <!--Login-->
-    <div class="login-bar">
-      <ul>
-        <li>LOGIN</li>
-        <li>CREATE ACCOUNT</li>
-      </ul>
-    </div>
-    <!--Navbar-->
-    <div class="nav-bar">
-      <ul>
-        <li>SHOP</li>
-        <li>STAFF PICK</li>
-        <li>CONTACT</li>
-        <li>CART</li>
-      </ul>
+    <div class="top-bar">
+      <div class="login-bar">
+        <ul>
+          <li class="login-bar-item">LOGIN</li>
+          <li class="login-bar-item">CREATE ACCOUNT</li>
+        </ul>
+      </div>
+      <!--Navbar-->
+      <div class="nav-bar">
+          <h1 class="nav-bar-item logo">LOGO</h1>
+        <ul>
+          <li class="nav-bar-item">SHOP</li>
+          <li class="nav-bar-item">STAFF PICK</li>
+          <li class="nav-bar-item">CONTACT</li>
+          <li class="nav-bar-item">CART</li>
+        </ul>
+      </div>
     </div>
 
     <!--Page content-->
-    <div class="content" style="max-width:2000px;margin-top:46px">
+    <div class="content" style="max-width:2400px;margin-top:46px">
       <!--Image Slideshow-->
       <div class="slideshow">
         <!--Three images, not clickable yet-->
@@ -41,7 +44,51 @@
       </div>
 
       <!--Featured Products-->
-      <div class="featured"></div>
+      <div class="featured">
+        <h2>Featured</h2>
+        <div class="row">
+          <div class="collumn size4">
+            <div class="container">
+              <img src="./assets/img/shirt-product1.jpg" style="width: 100%;" />
+              <p>Item Name<br /><b>$24.99</b></p>
+            </div>
+            <div class="container">
+              <img src="#" style="width: 100%" />
+              <p>Item name<br /><b>$21.99</b></p>
+            </div>
+          </div>
+          <div class="collumn size4">
+            <div class="container">
+              <img src="#" style="width: 100%;" />
+              <p>Item Name<br /><b>$24.99</b></p>
+            </div>
+            <div class="container">
+              <img src="#" style="width: 100%" />
+              <p>Item name<br /><b>$21.99</b></p>
+            </div>
+          </div>
+          <div class="collumn size4">
+            <div class="container">
+              <img src="#" style="width: 100%;" />
+              <p>Item Name<br /><b>$24.99</b></p>
+            </div>
+            <div class="container">
+              <img src="#" style="width: 100%" />
+              <p>Item name<br /><b>$21.99</b></p>
+            </div>
+          </div>
+          <div class="collumn size4">
+            <div class="container">
+              <img src="#" style="width: 100%;" />
+              <p>Item Name<br /><b>$24.99</b></p>
+            </div>
+            <div class="container">
+              <img src="#" style="width: 100%" />
+              <p>Item name<br /><b>$21.99</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!--Footer-->
       <footer id="footer">
@@ -111,23 +158,33 @@
             <p><i class="fa fa-fw fa-cc-visa"></i>Visa</p>
             <p><i class="fa fa-fw fa-cc-mastercard"></i>Mastercard</p>
           </div>
-          <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
-          <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
-          <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
-          <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
-          <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
-          <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+          <i class="fa fa-facebook-official hover-opacity large-icon"></i>
+          <i class="fa fa-instagram hover-opacity large-icon"></i>
+          <i class="fa fa-pinterest-p hover-opacity large-icon"></i>
+          <i class="fa fa-twitter hover-opacity large-icon"></i>
         </div>
         <div class="subscribe-box">
-            <h1>Subscribe</h1>
-            <p>To get our special offers:</p>
-            <p><input class="input border" type="text" placeholder="E-mail" style="width: 100%;"></p>
-            <button type="button" class="button red margin-bottom">Subscribe</button>
+          <h1>Subscribe</h1>
+          <p>To get our special offers:</p>
+          <p>
+            <input
+              class="input border"
+              type="text"
+              placeholder="E-mail"
+              style="width: 100%;"
+            />
+          </p>
+          <button type="button" class="button red margin-bottom">
+            Subscribe
+          </button>
         </div>
       </footer>
 
       <div class="black center copyright">
-          <p><i class="fa fa-fw fa-copyright"></i>Example Website. All rights reserved.</p>
+        <p>
+          <i class="fa fa-fw fa-copyright"></i>Example Website. All rights
+          reserved.
+        </p>
       </div>
     </div>
   </body>
