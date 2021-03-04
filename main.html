@@ -1,9 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>Basic ECommerce Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <!--<link rel="stylesheet" href="styles.css">-->
+  <title>Basic ECommerce Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <!--<link rel="stylesheet" href="styles.css">-->
+
+  <body>
+    <!--Login-->
+    <div class="login-bar">
+      <ul>
+        <li>LOGIN</li>
+        <li>CREATE ACCOUNT</li>
+      </ul>
+    </div>
+    <!--Navbar-->
+    <div class="nav-bar">
+      <ul>
+        <li>SHOP</li>
+        <li>STAFF PICK</li>
+        <li>CONTACT</li>
+        <li>CART</li>
+      </ul>
+    </div>
+
+    <!--Page content-->
+    <div class="content" style="max-width:2000px;margin-top:46px">
+      <!--Image Slideshow-->
+      <div class="slideshow">
+        <!--Three images, not clickable yet-->
+        <img src="assets/img/large-denim-img.jpg" style="width: 100%;" />
+        <div class="display-mid">
+          <h3>Spring Collection</h3>
+          <a href="#">Shop Now</a>
+        </div>
+      </div>
+
+      <!--Featured Products-->
+      <div class="featured"></div>
+
+      <!--Footer-->
+      <footer id="footer">
+        <div class="row-padding">
+          <div class="collumn size3">
+            <h4>Contact</h4>
+            <p>Ask us any questions.</p>
+            <form action="/action_page.php" target="blank">
+              <p>
+                <input
+                  class="input border"
+                  type="text"
+                  placeholder="Name"
+                  name="Name"
+                  required
+                />
+              </p>
+              <p>
+                <input
+                  class="input border"
+                  type="text"
+                  placeholder="Email"
+                  name="Email"
+                  required
+                />
+              </p>
+              <p>
+                <input
+                  class="input border"
+                  type="text"
+                  placeholder="Subject"
+                  name="Subject"
+                  required
+                />
+              </p>
+              <p>
+                <input
+                  class="input border"
+                  type="text"
+                  placeholder="Message"
+                  name="Message"
+                  required
+                />
+              </p>
+              <button class="button block black" type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="collumn size3">
+            <h4>About</h4>
+            <p><a href="#">About the company</a></p>
+            <p><a href="#">Support</a></p>
+            <p><a href="#">Return</a></p>
+            <p><a href="#">Shipment</a></p>
+            <p><a href="#">Payment</a></p>
+            <p><a href="#">Gift Cards</a></p>
+          </div>
+
+          <div class="collumn size3">
+            <p><i class="fa fa-fw fa-map-marker"></i>Location</p>
+            <p><i class="fa fa-fw fa-phone"></i>0123456789</p>
+            <p>
+              <i class="fa fa-fw fa-envelope-open"></i>contact@ecommerce.netcom
+            </p>
+            <h4>Accepted Payment</h4>
+            <p><i class="fa fa-fw fa-paypal"></i>Paypal</p>
+            <p><i class="fa fa-fw fa-cc-visa"></i>Visa</p>
+            <p><i class="fa fa-fw fa-cc-mastercard"></i>Mastercard</p>
+          </div>
+          <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+          <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+          <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+          <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+          <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+        </div>
+        <div class="subscribe-box">
+            <h1>Subscribe</h1>
+            <p>To get our special offers:</p>
+            <p><input class="input border" type="text" placeholder="E-mail" style="width: 100%;"></p>
+            <button type="button" class="button red margin-bottom">Subscribe</button>
+        </div>
+      </footer>
+
+      <div class="black center copyright">
+          <p><i class="fa fa-fw fa-copyright"></i>Example Website. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
 </html>
