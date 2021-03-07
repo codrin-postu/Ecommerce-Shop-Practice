@@ -1,80 +1,126 @@
 /* CSS File for example Ecommerce website. Made by Codrin (W) */
 
-div {
-    display: block;
+body {
+    margin: 0;
+    background: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
 }
 
-.top-bar {
+header {
+    background: #fff;
     position: fixed;
     z-index: 1000;
     width: 100%;
     top: 0;
     left: 0;
+} 
+
+header:after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .login-bar {
-    width: 100%;
-    height: 30px;
-    overflow: hidden;
-    color: #fff!important;
-	background-color: #000!important;
-    padding: 5px 0;
-}
-
-.login-bar ul {
-    margin-right: 20px;
-}
-
-ul, li {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-.nav-bar {
-    width: 100%;
-    padding: 16px;
-    overflow: hidden;
-    color: #000!important;
-	background-color: #fff!important;
-    height: 60px;
+    background: #000;
+    margin: 0 auto;
+    color: #fff;
+    height: 24px;
 }
 
 .login-bar .login-bar-item {
-    padding: 4px 12px;
+    padding: 4px 10px;
 	float: right;
-	width: auto;
-	border: none;
 	display: block
 }
 
-.login-bar .login-bar-item:hover {
+.login-bar ul {
+    float: right;
+    margin-right: 20px;
+    font-size: 10px;
+    margin: 0;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.login-bar li {
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+.login-bar a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.login-bar a:hover {
     text-decoration: underline;
     text-underline-offset: 2px;
 }
 
-.nav-bar .logo {
-    padding: 0px 6px;
-	float: left;
-	width: auto;
-	border: none;
-    display: inline;
-    font-size: 28px;
-    margin-right: 15%;
+.nav-bar {
+    width: 66%;
+    margin: 0 auto;
 }
 
-.nav-bar ul {
-    margin-top: 24px;
-    width: 40%;
+.logo {
+	float: left;
+    font-size: 32px;
+    padding: 16px 0;
+    margin: 0;
+}
+
+.logo:hover {
+    color: #444;
+}
+
+nav {
     float: right;
 }
 
-.nav-bar .nav-bar-item {
-    padding-left: 5%;
-	float: left;
-    display: inline;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.nav-bar .nav-bar-item:hover {
-    color: #4e4e4e;
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative;
 }
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #444;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: rgb(90, 90, 90);
+
+    position: absolute;
+    top: 0;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
