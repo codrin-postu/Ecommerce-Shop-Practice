@@ -1,10 +1,13 @@
 /* CSS File for example Ecommerce website. Made by Codrin (W) */
 
-body {
+body, html {
     margin: 0;
     background: #fff;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -123,4 +126,63 @@ nav a::before {
 nav a:hover::before {
     width: 100%;
 }
+
+.slideshow {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("../img/large-denim-img.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+    position: relative;
+}
+
+.slideshow .display-mid {
+    text-align: left;
+    position: absolute;
+    left: 17%;
+    top: 30%;
+    color: #fff;
+}
+
+.slideshow h3 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.slideshow a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.slideshow a:hover {
+    background-color: #444;
+}
+
+.featured {
+    width: 66%;
+    margin: 0 auto;
+}
+
+.featured h2 {
+    text-transform: uppercase;
+}
+
+.featured row {
+    padding-bottom: 0 8px;
+}
+
+.featured collumn {
+    float: left;
+    width: 100%;
+}
+
+
+
+
 

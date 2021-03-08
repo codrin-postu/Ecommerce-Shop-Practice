@@ -7,39 +7,40 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Work+Sans:400"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
   <link rel="stylesheet" href="./assets/css/main.css" />
 
   <body>
     <header>
       <!--Login-->
-        <div class="login-bar">
+      <div class="login-bar">
+        <ul>
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">CREATE ACCOUNT</a></li>
+        </ul>
+      </div>
+      <!--Navbar-->
+      <div class="nav-bar">
+        <h1 class="logo">LOGO</h1>
+        <nav>
           <ul>
-            <li ><a href="#">LOGIN</a></li>
-            <li ><a href="#">CREATE ACCOUNT</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">STAFF PICK</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">CART</a></li>
           </ul>
-        </div>
-        <!--Navbar-->
-        <div class="nav-bar">
-          <h1 class="logo">LOGO</h1>
-          <nav>
-            <ul>
-              <li><a href="#">SHOP</a></li>
-              <li><a href="#">STAFF PICK</a></li>
-              <li><a href="#">CONTACT</a></li>
-              <li><a href="#">CART</a></li>
-            </ul>
-          </nav>
-        </div>
+        </nav>
+      </div>
     </header>
 
     <!--Page content-->
     <div class="content" style="max-width: 2400px; margin-top: 46px">
       <!--Image Slideshow-->
       <div class="slideshow">
-        <!--Three images, not clickable yet-->
-        <img src="assets/img/large-denim-img.jpg" style="width: 100%" />
         <div class="display-mid">
           <h3>Spring Collection</h3>
           <a href="#">Shop Now</a>
@@ -170,11 +171,7 @@
           <h1>Subscribe</h1>
           <p>To get our special offers:</p>
           <p>
-            <input
-              class="input border"
-              type="text"
-              placeholder="E-mail"
-            />
+            <input class="input border" type="text" placeholder="E-mail" />
           </p>
           <button type="button" class="button red margin-bottom">
             Subscribe
