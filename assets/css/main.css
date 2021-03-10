@@ -1,5 +1,11 @@
 /* CSS File for example Ecommerce website. Made by Codrin (W) */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body,
 html {
   margin: 0;
@@ -176,30 +182,30 @@ nav a:hover::before {
 }
 
 .featured {
-  width: 60%;
+  width: 62%;
   margin: 0 auto;
 }
 
 .featured h2 {
   text-align: center;
   font-size: 50px;
-  font-weight: 10;
+  font-weight: 100;
   padding-top: 20px;
   padding-bottom: 0;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 
-.featured .row {
+.row {
   padding: 0 8px;
 }
 
-.featured .collumn {
+.collumn {
   float: left;
   width: 100%;
 }
 
-.featured .container {
+.container {
   padding: 0 16px;
   margin-bottom: 75px;
   padding-bottom: 25px;
@@ -295,3 +301,92 @@ nav a:hover::before {
     width: 99.999%;
   }
 }
+
+
+footer {
+  width: 62%;
+  margin: auto;
+}
+
+footer h4 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 1em;
+}
+
+footer .collumn {
+  text-align: center;
+  line-height: 0.5em;
+}
+
+footer a,
+footer p {
+  text-decoration: none;
+  font-size: 13px;
+  color: #444;
+}
+
+footer .collumn > * + h4 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+footer hr {
+  width: 75%;
+}
+
+footer p > i {
+  margin-right: 1em;
+}
+
+footer .social a > i {
+  margin-top: 1em;
+  font-size: 25px;
+}
+
+footer input[type=text] {
+  width: 90%;
+  padding: 14px;
+  border: none;
+  background-color: #ccc;
+  outline: none;
+}
+
+footer button {
+  width: 90%;
+  padding: 15px;
+  border: none;
+  color: #fff;
+}
+
+footer button.black {
+  background-color: #000;
+}
+
+footer button.black:hover {
+  background-color: #444;
+}
+
+footer button.red {
+  background-color:rgb(255, 32, 32);
+}
+
+footer button.red:hover {
+  background-color: rgb(255, 87, 87);
+}
+
+.copyright {
+  clear: left;
+  width: 100%;
+
+  margin: 1rem auto;
+  padding: 1rem 0;
+
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 12px;
+}
+
+
