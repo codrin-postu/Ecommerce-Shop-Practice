@@ -303,12 +303,16 @@ nav a:hover::before {
   .collumn.sizeS5 {
     width: 49.999%;
   }
+
+  .collumn.sizeS8 {
+    width: 98.888%;
+  }
 }
 
 footer {
   clear:left;
   max-width: 1150px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 footer h4 {
@@ -320,6 +324,7 @@ footer h4 {
 footer .collumn {
   text-align: center;
   line-height: 0.5em;
+  margin: auto;
 }
 
 footer a,
@@ -378,7 +383,10 @@ footer button.red:hover {
   background-color: rgb(255, 87, 87);
 }
 
-@media (max-width) {
+@media(max-width: 900px) {
+  footer .container {
+    margin: auto;
+  }
 }
 
 .copyright {
