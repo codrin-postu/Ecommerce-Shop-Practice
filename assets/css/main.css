@@ -40,7 +40,7 @@ header:after,
 }
 
 .login-content {
-  width: 60%;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -79,7 +79,7 @@ header:after,
 }
 
 .nav-bar {
-  width: 60%;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -146,20 +146,20 @@ nav a:hover::before {
 .slideshow {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
     url("../img/large-denim-img.jpg");
-  height: 800px;
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-
   position: relative;
 }
 
 .slideshow .display-mid {
-  text-align: left;
   position: absolute;
-  left: 20.3%;
   top: 30%;
+  left: 20%;
+
+  text-align: left;
   color: #fff;
 }
 
@@ -181,8 +181,20 @@ nav a:hover::before {
   background-color: #444;
 }
 
+@media(max-width:1400px) {
+  .slideshow .display-mid {
+    left: 10%;
+  }
+}
+
+@media(max-width:900px) {
+  .slideshow .display-mid {
+    left: 0;
+  }
+}
+
 .featured {
-  width: 62%;
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -228,7 +240,7 @@ nav a:hover::before {
   display: block;
   margin-top: 20px;
   margin-bottom: 2px;
-  
+
   font-size: 13px;
   color: #000;
   text-decoration: none;
@@ -240,6 +252,12 @@ nav a:hover::before {
   margin-bottom: 25px;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media (max-width: 1400px) {
+  .featured .container img {
+    size: 90%;
+  }
 }
 
 /*Collumn sizes*/
@@ -272,7 +290,7 @@ nav a:hover::before {
   width: 99.999%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .collumn.sizeM1 {
     width: 8.333%;
   }
@@ -302,9 +320,39 @@ nav a:hover::before {
   }
 }
 
+@media (max-width: 900px) {
+  .collumn.sizeS1 {
+    width: 8.333%;
+  }
+  .collumn.sizeS2 {
+    width: 16.333%;
+  }
+  .collumn.sizeS3 {
+    width: 24.999%;
+  }
+  .collumn.sizeS4 {
+    width: 33.333%;
+  }
+  .collumn.sizeS5 {
+    width: 49.999%;
+  }
+  .collumn.sizeS6 {
+    width: 66.666%;
+  }
+  .collumn.sizeS7 {
+    width: 74.999%;
+  }
+  .collumn.sizeS8 {
+    width: 91.666%;
+  }
+  .collumn.sizeS9 {
+    width: 99.999%;
+  }
+}
 
 footer {
-  width: 62%;
+  
+  max-width: 1150px;
   margin: auto;
 }
 
@@ -344,7 +392,7 @@ footer .social a > i {
   font-size: 25px;
 }
 
-footer input[type=text] {
+footer input[type="text"] {
   width: 90%;
   padding: 14px;
   border: none;
@@ -368,11 +416,14 @@ footer button.black:hover {
 }
 
 footer button.red {
-  background-color:rgb(255, 32, 32);
+  background-color: rgb(255, 32, 32);
 }
 
 footer button.red:hover {
   background-color: rgb(255, 87, 87);
+}
+
+@media (max-width) {
 }
 
 .copyright {
@@ -388,5 +439,3 @@ footer button.red:hover {
 .copyright p {
   font-size: 12px;
 }
-
-
